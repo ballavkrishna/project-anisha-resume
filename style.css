@@ -7,6 +7,17 @@ body, h1, h2, p, ul, li {
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
+    overflow: hidden; /* Prevent horizontal scrollbars */
+}
+
+/* Animated background */
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
 }
 
 header {
@@ -47,4 +58,11 @@ footer {
     background-color: #3498db;
     color: #fff;
     padding: 10px;
+}
+
+/* Apply the animated background to the entire page */
+body {
+    animation: backgroundAnimation 10s linear infinite alternate-reverse;
+    background: linear-gradient(90deg, #f0f0f0 25%, #ffffff 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
 }
