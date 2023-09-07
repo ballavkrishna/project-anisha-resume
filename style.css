@@ -6,51 +6,26 @@ body, h1, h2, p, ul, li {
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: lightgray; /* Light gray background */
     overflow: hidden; /* Prevent horizontal scrollbars */
 }
 
-/* Animated background */
-@keyframes backgroundAnimation {
-    0% {
-        background-position: 0 0;
-    }
-    100% {
-        background-position: 100% 0;
-    }
-}
-
 header {
-    background-color: #3498db;
-    color: #fff;
-    padding: 10px;
-}
-
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-}
-
-section {
+    text-align: center;
     padding: 20px;
-    background-color: #fff;
-    margin: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #3498db; /* Vibrant blue background */
+    color: #fff; /* White text color */
+    font-family: "Your Custom Font", sans-serif; /* Replace with your custom font */
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+header h1 {
+    font-size: 3rem; /* Adjust font size */
+    letter-spacing: 4px; /* Adjust letter spacing for creative look */
+    text-transform: uppercase; /* Uppercase text */
+}
+
+main {
+    padding: 20px;
 }
 
 footer {
@@ -58,11 +33,4 @@ footer {
     background-color: #3498db;
     color: #fff;
     padding: 10px;
-}
-
-/* Apply the animated background to the entire page */
-body {
-    animation: backgroundAnimation 10s linear infinite alternate-reverse;
-    background: linear-gradient(90deg, #f0f0f0 25%, #ffffff 50%, #f0f0f0 75%);
-    background-size: 200% 100%;
 }
